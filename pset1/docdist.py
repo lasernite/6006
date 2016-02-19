@@ -102,3 +102,5 @@ def doc_dist_50(word_list1, word_list2):
 
     return vector_angle(words_50_1[0:50], words_50_2[0:50])
 
+
+
