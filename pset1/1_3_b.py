@@ -47,11 +47,11 @@ def naive(A):
         for j in range(i, n):
             if (i >= index[1] and j >= index[1]) or (i <= index[0] and j <= index[0]):
                 ans2 = max(ans2, A[j] - A[i])
-                if ans2 > A[index[1]] - A[index[0]]:
-                    index[0] = i
-                    index[1] = j
+                if ans2 > A[index2[1]] - A[index2[0]]:
+                    index2[0] = i
+                    index2[1] = j
 
-    return (ans, ans2)
+    return (ans, ans2, index, index2)
 
 def dc(A, lo, hi):
     """ return best gain on A[lo:hi], using divide & conquer 
